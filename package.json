@@ -49,7 +49,10 @@
 		"tslint-check": "tslint-config-prettier-check ./tslint.json",
 		"count": "cross-env yarn cloc backend/api/src admin/website-angular/src shop/mobile-ionic/src shop/website-angular/src carrier/mobile-ionic/src merchant/tablet-ionic/src shared/core-angular shared/core --exclude-dir='node_modules,modules'",
 		"snyk-protect": "snyk protect",
-		"prepare": "yarn run snyk-protect"
+		"prepare": "yarn run snyk-protect",
+        "postinstall":"yarn build"
+        
+        
 	},
 	"resolutions": {},
 	"dependencies": {
